@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burtu spēle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper"></div>
+
+        <div class="start" style="display: block;">
+        <h3> Lai Tev veicas vārdu minēšanā!</h3>
+        <input type="button" onclick="saktSpeli" value="Sākt!"/>
+        </div> <!--Beidzas starta logs-->
+
+        <div class="laukums" style="display: none;">
+        <p class="vardaBurti"></p>
+        <input class="vardaIevade" type="text" placeholder="Ievadi pareizo vārdu šeit">
+
+         <div class="info"> 
+             <p>Laiks:<span class="time">0:00</span></p>
+             <p>Rezultāts:<span class="score">0</span></p>
+         </div>
+        </div> <!--Beidzas spēles laikums-->
+
+        <div class="youLose" style="display: none;">
+            <h1>Spēle beigusies!</h1>
+            Tavs rezultāts:<h3 class="galaRezultats"></h3>
+            Ja vēlies reģistrēt rezultātu ievadi vārdu: <input class="vards"/>
+            <<input type="button" value= "Reģistrēt" onclick="registretRezultatu"/>
+            <button onclick="restart"> Spēlēt</button>
+            
+        </div> <!--Beidzās rezultāta reģistrācija-->
+
+
+    <script src="scrpit.js"></script>
+</body>
+</html>
